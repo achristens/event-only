@@ -1,1 +1,6 @@
-events#show page
+<h1><%= @event.name %> </h1>
+<p> <%= link_to("Edit Event", edit_event_path) %> </p>
+
+<%= render 'single_event', event: @event %>
+
+<p>This is going to be a real good time!</p>

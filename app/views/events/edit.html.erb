@@ -1,1 +1,3 @@
-events#edit page
+<h1>Edit Event: <%= @event.name %> </h1>
+<%= link_to("Back to Event", event_path(@event.id)) %>
+<%= render 'events_form', event: @event %>
