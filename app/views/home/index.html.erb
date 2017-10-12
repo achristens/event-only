@@ -3,7 +3,7 @@
 
   <%= link_to 'View Locations Page', locations_path %>
   <% @locations.each do |current_location| %>
-    <%= render '/locations/single_location', location: current_location %>
+    <%= render '/locations/single_location', location: current_location, show_title: true%>
   <% end %>
 
 </p>
