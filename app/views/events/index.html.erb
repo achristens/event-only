@@ -4,5 +4,4 @@
 <% @events.each do |event| %>
   <%= render 'single_event', event: event %>
   <p><%= link_to('View Event', event_path(event)) %></p>
-
 <% end %>
